@@ -19,5 +19,14 @@
         "name": "Rafal Gierczak",
         "email": "gierczak.raf@gmail.com"
     },
+    "keywords": [
+        "parse",
+        "float",
+        "int",
+        "precision",
+        "number",
+        "digits",
+        "convert"
+    ],
     "license": "MIT"
 }
