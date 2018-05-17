@@ -11,7 +11,7 @@ describe('General', function () {
 
     it("should't work", function () {
         expect(function () {
-            parseToFloat(234.43, "test")
+            parseToFloat(234.43, 'test');
         }).toThrow();
     });
 
@@ -22,5 +22,5 @@ describe('General', function () {
         expect(parseToFloat(234)).toEqual(234);
         expect(parseToFloat(234.00)).toEqual(234);
         expect(parseToFloat(234.00)).toEqual(234.00);
-    })
+    });
 });
