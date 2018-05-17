@@ -1,6 +1,6 @@
 {
     "name": "parse-to-float",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Parsing number to float with two digits precision",
     "scripts": {
         "test": "jasmine JASMINE_CONFIG_PATH=test/unit/jasmine.json"
