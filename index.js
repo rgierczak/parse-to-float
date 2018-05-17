@@ -4,8 +4,8 @@
  * Helper which checks if the value exists.
  * We do not use external package, because of helper's simplicity.
  *
- * @param {boolean} value Check condition.
- * @param {string} message Additional message.
+ * @param {boolean} value - Check condition.
+ * @param {string} message - Additional message.
  */
 function assert(value, message) {
     if (!value) {
@@ -15,17 +15,18 @@ function assert(value, message) {
 
 /**
  * Helper allows to parse the parameter value to float, with provided precision.
- * As the toFixed function returns the string type, it is necessary to convert from string to number.
+ * As the toFixed function returns the string type, it is necessary to convert
+ * from string to number.
  *
- * @param {number} expression Expression to convert.
- * @param {number} precision List of digits after dot.
+ * @param {number|string} expression - Expression to convert.
+ * @param {number} [precision=2] - List of digits after dot.
  * @returns {number}
  */
 function parseToFloat(expression, precision) {
-    assert(typeof expression === "number", "expression should be a number");
+    assert(typeof expression === 'number', 'expression is not a number');
 
     precision = precision || 2;
-    assert(typeof precision === "number", "precision should be a number");
+    assert(typeof precision === 'number', 'precision is not a number');
 
     return Number(parseFloat(expression).toFixed(precision));
 }
